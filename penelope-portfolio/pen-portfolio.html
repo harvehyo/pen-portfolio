@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.0/flowbite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        html { scrollbar-width: none; }
+        body { -ms-overflow-style: none; overflow-x: hidden; }
+        * {
+        font-family: 'Poppins', sans-serif;
+    }
+    </style>
+    <link rel="shortcut icon" href="images/ribbon.png">
+    <title>Penelope Inaho</title>
+</head>
+<body class="overflow-x-hidden">    
+    <nav class="border-gray-400 bg-white/50 top-0 left-0 w-full z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#Home" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="images/flower.png" class="h-10" alt="Pen's logo" />
+          </a>
+          <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+            <ul class="flex flex-col font-semibold text-lg mt-5 rounded-lg bg-transparent md:space-x-30 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              <li>
+                <a href="#Home" class="relative text-pink-500 hover:text-pink-400 cursor-pointer transition-all ease-in-out 
+                before:transition-[width] before:ease-in-out before:duration-700 
+                before:absolute before:bg-pink-300 before:origin-center before:h-[1px] before:w-0 
+                hover:before:w-[50%] before:bottom-0 before:left-[50%] 
+                after:transition-[width] after:ease-in-out after:duration-700 
+                after:absolute after:bg-pink-300 after:origin-center after:h-[1px] after:w-0 
+                hover:after:w-[50%] after:bottom-0 after:right-[50%]">Home</a>
+              </li>
+              <li>
+                <a href="#About" class="relative text-pink-500 hover:text-pink-400 cursor-pointer transition-all ease-in-out 
+                before:transition-[width] before:ease-in-out before:duration-700 
+                before:absolute before:bg-pink-300 before:origin-center before:h-[1px] before:w-0 
+                hover:before:w-[50%] before:bottom-0 before:left-[50%] 
+                after:transition-[width] after:ease-in-out after:duration-700 
+                after:absolute after:bg-pink-300 after:origin-center after:h-[1px] after:w-0 
+                hover:after:w-[50%] after:bottom-0 after:right-[50%]">About</a>
+              </li>
+              <li>
+                <a href="#Projects" class="relative text-pink-500 hover:text-pink-400 cursor-pointer transition-all ease-in-out 
+                before:transition-[width] before:ease-in-out before:duration-700 
+                before:absolute before:bg-pink-300 before:origin-center before:h-[1px] before:w-0 
+                hover:before:w-[50%] before:bottom-0 before:left-[50%] 
+                after:transition-[width] after:ease-in-out after:duration-700 
+                after:absolute after:bg-pink-300 after:origin-center after:h-[1px] after:w-0 
+                hover:after:w-[50%] after:bottom-0 after:right-[50%]">Projects?</a>
+              </li>
+              <li>
+                <a href="#Contact" class="relative text-pink-500 hover:text-pink-400 cursor-pointer transition-all ease-in-out 
+                before:transition-[width] before:ease-in-out before:duration-700 
+                before:absolute before:bg-pink-300 before:origin-center before:h-[1px] before:w-0 
+                hover:before:w-[50%] before:bottom-0 before:left-[50%] 
+                after:transition-[width] after:ease-in-out after:duration-700 
+                after:absolute after:bg-pink-300 after:origin-center after:h-[1px] after:w-0 
+                hover:after:w-[50%] after:bottom-0 after:right-[50%]">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      
+    <div id="Home" class="h-screen bg-cover bg-center bg-no-repeat flex justify-center items-center px-4" style="background-image: url('images/pink-clouds.jpg');">
+        <div class="text-white flex flex-col items-center text-center max-w-3xl delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+            <p class="text-3xl md:text-6xl md:w-400 font-semibold mb-5">
+                Hi! I'm <span class="text-pink-500 font-bold">Penelope Inaho</span>
+            </p>
+            <p class="text-lg md:text-3xl md:w-300 font-semibold mb-10">
+                BA in Communication graduate, eager to contribute my skills in media, writing, and communication.
+            </p> 
+            <a href="#About">
+                <button class="relative h-[auto] w-50 overflow-hidden cursor-pointer bg-white/80 text-pink-400 text-2xl font-semibold py-5 px-10 rounded-full shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-600 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-600 hover:text-white hover:shadow-pink-400 hover:before:w-1/2 hover:before:bg-pink-400 hover:after:w-1/2 hover:after:bg-pink-400">
+                    <span class="relative z-10">
+                        Continue
+                    </span>
+                </button>
+            </a>
+            <div class="flex justify-center space-x-15 mt-10">
+                <a href="https://www.tiktok.com/@inahoehoehoe"><img src="images/tiktok (2).png" alt="tiktok logo" class="h-13 duration-300 hover:opacity-50"></a>
+                <a href="https://www.facebook.com/penelopeinaho"><img src="images/facebook (1).png" alt="facebook logo" class="h-12 duration-300 hover:opacity-50"></a>
+                <a href="https://www.instagram.com/lowpi/"><img src="images/instagram.png" alt="instagram logo" class="h-13 duration-300 hover:opacity-50"></a>
+            </div>
+            
+        </div>
+    </div>    
+    
+
+    <div id="About" class="h-svh bg-white flex flex-row items-center justify-center md:justify-between md:mx-25 md:ml-30">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="h-full flex flex-col items-center justify-center hidden md:block md:w-90 md:ml-10 md:delay-[300ms] md:duration-[600ms] md:taos:translate-x-[-100%] md:taos:opacity-0" data-taos-offset="400">
+                <img src="images/Pen-About.jpg" alt="pen's picture" class="h-full md:object-cover"/>
+            </div>
+            <div class="max-w-90 text-justify md:ml-20 md:delay-[300ms] md:duration-[600ms] md:taos:translate-x-[100%] md:taos:opacity-0" data-taos-offset="400">
+                <h1 class="text-6xl md:text-8xl md:w-120 text-center font-bold md:text-left">About Me</h1>
+                <p class="text-2xl md:text-4xl md:w-100 text-pink-500 mt-4 text-center font-bold md:text-left">
+                    Penelope Inaho Lopez
+                </p>
+                <p class="font-medium text-lg text-gray-800 mt-4 md:text-left md:w-200 md:text-xl/7">
+                    A GEN-Z content copywriter/social media
+                    specialist, you can call me “Pen” for short! 
+                    <br><br>
+                    I am 23 years old and a graduate of Bachelor of Arts in Communication
+                    at Adamson University. I have a passion for content creation, gaming,
+                    reading, painting, and even writing may it be in feature, literature or
+                    articles. I also love listening to K-POP and POP music! 
+                    <br><br>
+                    I also read a lot of books during my free time. 
+                    <br>
+                    <span class="font-bold">FUN FACT:</span>  I can read one
+                    book in one seating! 🙂                    
+                </p>
+                <a href="pdf-files/LOPEZ CV.pdf" download>
+                    <button class="mt-15 px-6 py-2 cursor-pointer font-medium bg-pink-400 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+                        <img src="images/download.png" alt="download button" class="h-7 inline-block mr-2">
+                        Resume
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Projects" class="h-auto bg-pink-300 flex flex-col items-center justify-start p-10 gap-10">
+        <h1 class="font-bold text-2xl md:text-4xl text-white text-center">Projects</h1>
+        
+        <div class="grid grid-cols-1 gap-10 w-full">
+            <div class="h-auto bg-white rounded-xl shadow-lg p-5 grid grid-cols-1 md:grid-cols-2 gap-5 m-5 md:p-10">
+                <div class="w-full aspect-video">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed/4rhEcyfyHQ0?si=IkrivOu8xf4Brm98" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>            
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed/SlSz2UE6CD0?si=W1F_k5Gj7XuJtcWj" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed/ELyvDrfybTU?si=LgXA3AG20PwqZNTc" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="w-full aspect-video">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/bxtraphilippines/videos/919647433428223&show_text=false&width=560" 
+                        frameborder="0" 
+                        allowfullscreen 
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                    </iframe>
+                </div>                
+            </div>
+        </div>
+        
+        <div class="h-auto bg-white rounded-xl shadow-lg p-5">
+            <div class="overflow-x-auto w-full my-10 px-2 md:px-10">
+                <div class="container mx-auto flex flex-wrap sm:flex-nowrap gap-5"> 
+        
+                    <div class="w-full sm:w-[325px] md:w-[300px] aspect-video max-w-[605px] min-w-[325px]">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bxtraphilippines/video/7469679790459587847" data-video-id="7469679790459587847"> 
+                            <section> 
+                                <a target="_blank" title="@bxtraphilippines" href="https://www.tiktok.com/@bxtraphilippines?refer=embed">@bxtraphilippines</a> 
+                            </section> 
+                        </blockquote> 
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+        
+                    <div class="w-full sm:w-[325px] md:w-[300px] aspect-video max-w-[605px] min-w-[325px]">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bxtraphilippines/video/7463009422575488264" data-video-id="7463009422575488264"> 
+                            <section> 
+                                <a target="_blank" title="@bxtraphilippines" href="https://www.tiktok.com/@bxtraphilippines?refer=embed">@bxtraphilippines</a> 
+                            </section> 
+                        </blockquote> 
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+        
+                    <div class="w-full sm:w-[325px] md:w-[300px] aspect-video max-w-[605px] min-w-[325px]">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bxtraphilippines/video/7441836112366128391" data-video-id="7441836112366128391"> 
+                            <section> 
+                                <a target="_blank" title="@bxtraphilippines" href="https://www.tiktok.com/@bxtraphilippines?refer=embed">@bxtraphilippines</a> 
+                            </section> 
+                        </blockquote> 
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+        
+                    <div class="w-full sm:w-[325px] md:w-[300px] aspect-video max-w-[605px] min-w-[325px]">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@bxtraphilippines/video/7431442467574074642" data-video-id="7431442467574074642"> 
+                            <section> 
+                                <a target="_blank" title="@bxtraphilippines" href="https://www.tiktok.com/@bxtraphilippines?refer=embed">@bxtraphilippines</a> 
+                            </section> 
+                        </blockquote> 
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <div id="Contact" class="h-auto md:h-svh flex flex-row md:flex-row items-center justify-center md:justify-evenly w-full px-5 py-10 bg-transparent overflow-hidden">
+        <div class="p-4 mx-auto max-w-xl bg-transparent text-center md:text-left delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0" data-taos-offset="400">
+            <h1 class="text-3xl text-gray-800 font-bold">Get in touch</h1>
+            <p class="max-w-lg text-center md:text-left text-gray-800 mt-4 text-lg">
+                Building strong professional relationships is essential to driving success and innovation. 
+                If you believe my skills and experience align with your needs, I would be happy to explore potential opportunities together.
+            </p>
+            <form class="mt-8 space-y-4" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="19eb1720-689a-400f-93a7-43e1664a9e10">
+
+            <input type="text" name="name" placeholder="Name" required
+                class="w-full py-2.5 px-4 text-gray-800 bg-gray-100 border focus:border-black focus:bg-transparent text-sm outline-none transition-all rounded-xl" />
+            <input type="email" name="email" placeholder="Email" required
+                class="w-full py-2.5 px-4 text-gray-800 bg-gray-100 border focus:border-black focus:bg-transparent text-sm outline-none transition-all rounded-xl" />
+            <input type="text" name="subject" placeholder="Subject" required
+                class="w-full py-2.5 px-4 text-gray-800 bg-gray-100 border focus:border-black focus:bg-transparent text-sm outline-none transition-all rounded-xl" />
+            <textarea name="message" placeholder="Message" rows="5" required
+                class="w-full px-4 text-gray-800 bg-gray-100 border focus:border-black focus:bg-transparent text-sm pt-3 outline-none transition-all rounded-xl"></textarea>
+            <button type="submit"
+                class="text-md text-white bg-pink-500 hover:bg-pink-400 cursor-pointer px-7 py-2 rounded-lg outline-none focus:ring-1 transform active:scale-75 transition-transform">
+                Send
+            </button>
+        </form>
+        </div>
+    
+        <div class="p-4 mx-auto max-w-lg bg-transparent hidden md:block delay-[200ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400">
+            <img src="images/person.png" alt="contact form person" class="h-64 mx-auto" />
+        </div>
+    </div>    
+
+
+    <div class="h-30 bg-pink-300 align-middle text-center p-7 text-sm">
+        <div class="flex justify-center space-x-10">
+            <a href="https://www.facebook.com/penelopeinaho" target="_blank"><img src="images/facebook (1).png" alt="facebook logo" class="h-8"></a>
+            <a href="mailto:lopezpenelopeinaho@gmail.com" target="_blank"><img src="images/gmail.png" alt="gmail logo" class="h-8"></a>
+            <a href="https://www.linkedin.com/in/penelope-inaho-lopez-644a6a23b/" target="_blank"><img src="images/linkedin.png" alt="linkedin logo" class="h-8"></a>
+        </div>
+
+        <div class="text-black pt-7">
+            Penelope Inaho Lopez © 2025
+        </div>
+    </div>
+    
+    <script>document.documentElement.classList.add('js')</script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+
+</body>
+</html>
